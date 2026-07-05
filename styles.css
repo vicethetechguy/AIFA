@@ -65,7 +65,7 @@ h1, h2, h3, h4, .nav-brand, .massive-title, .section-title, .hero-subtext, .eyeb
 .p-0 { padding: 0; }
 .p-sm { padding: var(--space-sm); }
 .p-md { padding: var(--space-md); }
-.p-lg { padding: var(--space-lg); }
+.p-lg { padding: var(--space-lg) var(--space-md); }
 
 .pt-sm { padding-top: var(--space-sm); }
 .pb-sm { padding-bottom: var(--space-sm); }
@@ -289,7 +289,7 @@ ul {
 }
 
 .who-card {
-    padding: var(--space-md) var(--space-lg);
+    padding: var(--space-lg) var(--space-md);
     display: flex;
     flex-direction: column;
     justify-content: center;
