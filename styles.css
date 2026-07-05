@@ -195,6 +195,8 @@ ul {
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding: 0 var(--space-md);
+    white-space: nowrap;
     background-color: var(--accent-bg);
     color: var(--accent-text);
     font-weight: 800;
@@ -689,9 +691,9 @@ ul {
 /* RESPONSIVE */
 @media (max-width: 1024px) {
     :root {
-        --space-sm: 0.8rem;
-        --space-md: 1.2rem;
-        --space-lg: 1.2rem;
+        --space-sm: 0.5rem;
+        --space-md: 0.8rem;
+        --space-lg: 0.8rem;
     }
 
     .hero-grid {
@@ -708,7 +710,9 @@ ul {
     }
     
     .nav-grid {
-        grid-template-columns: 1fr auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
     }
     
     .nav-links {
